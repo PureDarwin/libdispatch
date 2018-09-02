@@ -63,6 +63,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		1F96C9F7213C96E300771A4F /* tracepoint_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F96C9F6213C96E300771A4F /* tracepoint_private.h */; };
 		2BBF5A60154B64D8002B20F9 /* allocator_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BBF5A5F154B64D8002B20F9 /* allocator_internal.h */; };
 		2BBF5A61154B64D8002B20F9 /* allocator_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BBF5A5F154B64D8002B20F9 /* allocator_internal.h */; };
 		2BBF5A63154B64F5002B20F9 /* allocator.c in Sources */ = {isa = PBXBuildFile; fileRef = 2BBF5A62154B64F5002B20F9 /* allocator.c */; };
@@ -556,6 +557,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1F96C9F6213C96E300771A4F /* tracepoint_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tracepoint_private.h; sourceTree = "<group>"; };
+		1F96C9F9213C973300771A4F /* cpu_capabilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cpu_capabilities.h; sourceTree = "<group>"; };
 		2BBF5A5F154B64D8002B20F9 /* allocator_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = allocator_internal.h; sourceTree = "<group>"; };
 		2BBF5A62154B64F5002B20F9 /* allocator.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = allocator.c; sourceTree = "<group>"; };
 		2BE17C6318EA305E002CA4E8 /* layout_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = layout_private.h; sourceTree = "<group>"; };
@@ -788,6 +791,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		1F96C9F8213C973300771A4F /* i386 */ = {
+			isa = PBXGroup;
+			children = (
+				1F96C9F9213C973300771A4F /* cpu_capabilities.h */,
+			);
+			name = i386;
+			path = private/i386;
+			sourceTree = SOURCE_ROOT;
+		};
 		6E5ACCAE1D3BF27F007DA2B4 /* event */ = {
 			isa = PBXGroup;
 			children = (
@@ -836,6 +848,7 @@
 				6EB60D291BBB19640092FA94 /* firehose_inline_internal.h */,
 				6E9B6B201BB4CC73009E324D /* firehose_buffer_internal.h */,
 				6E21F2E41BBB23F00000C6A5 /* firehose_server_internal.h */,
+				1F96C9F6213C96E300771A4F /* tracepoint_private.h */,
 			);
 			path = firehose;
 			sourceTree = "<group>";
@@ -1013,6 +1026,7 @@
 				E422A0D412A557B5005E5BDB /* trace.h */,
 				E44F9DA816543F79001DCD38 /* introspection_internal.h */,
 				96929D830F3EA1020041FF5D /* shims.h */,
+				1F96C9F8213C973300771A4F /* i386 */,
 				6E5ACCAE1D3BF27F007DA2B4 /* event */,
 				6EF0B2661BA8C43D007FA4F6 /* firehose */,
 				FC1832A0109923B3003403D5 /* shims */,
@@ -1078,6 +1092,7 @@
 				965ECC210F3EAB71004DDD89 /* object_internal.h in Headers */,
 				96929D960F3EA2170041FF5D /* queue_internal.h in Headers */,
 				FC0B34790FA2851C0080FFA0 /* source_internal.h in Headers */,
+				1F96C9F7213C96E300771A4F /* tracepoint_private.h in Headers */,
 				5A5D13AC0F6B280500197CC3 /* semaphore_internal.h in Headers */,
 				E4C1ED6F1263E714000D3C8B /* data_internal.h in Headers */,
 				E44A8E721805C473009FFDB6 /* voucher_private.h in Headers */,
