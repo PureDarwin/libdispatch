@@ -214,9 +214,6 @@ DISPATCH_EXPORT DISPATCH_NOTHROW void dispatch_atfork_child(void);
 #define DISPATCH_DEBUG_QOS DISPATCH_DEBUG
 #endif
 
-#if HAVE_LIBKERN_OSCROSSENDIAN_H
-#include <libkern/OSCrossEndian.h>
-#endif
 #if HAVE_LIBKERN_OSATOMIC_H
 #include <libkern/OSAtomic.h>
 #endif
