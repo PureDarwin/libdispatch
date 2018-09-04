@@ -784,6 +784,8 @@ typedef struct dispatch_trace_timer_params_s {
 #define DISPATCH_PERF_MON_worker_thread_end DISPATCH_CODE_END(PERF_MON, 1)
 #define DISPATCH_PERF_MON_worker_useless DISPATCH_CODE(PERF_MON, 2)
 
+extern int kdebug_trace(uint32_t code, uint64_t a, uint64_t b, uint64_t c, uint64_t d);
+
 DISPATCH_ALWAYS_INLINE
 static inline void
 _dispatch_ktrace_impl(uint32_t code, uint64_t a, uint64_t b,
