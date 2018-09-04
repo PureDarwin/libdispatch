@@ -39,6 +39,7 @@
 #ifdef __APPLE__
 #include <Availability.h>
 #include <os/availability.h>
+#include <os/base_private.h>
 #include <TargetConditionals.h>
 
 #ifndef TARGET_OS_MAC_DESKTOP
