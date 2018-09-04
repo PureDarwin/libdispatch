@@ -18,6 +18,7 @@
  * @APPLE_APACHE_LICENSE_HEADER_END@
  */
 
+#define OBJC_WEAK_REFERENCE_IMPL 1
 #include "internal.h"
 
 #if USE_OBJC
