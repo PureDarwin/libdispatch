@@ -26,3 +26,4 @@ OTHER_LDFLAGS =
 VERSIONING_SYSTEM =
 EXCLUDED_SOURCE_FILE_NAMES = *
 INCLUDED_SOURCE_FILE_NAMES = voucher.c // minimal with DISPATCH_VARIANT_DYLD_STUB
+HEADER_SEARCH_PATHS = $(DEPROOT)/System/Library/Frameworks/System.framework/PrivateHeaders $(inherited)

@@ -41,6 +41,7 @@
 #include <os/availability.h>
 #include <os/base_private.h>
 #include <TargetConditionals.h>
+#include <sys/kdebug.h>
 
 #ifndef TARGET_OS_MAC_DESKTOP
 #define TARGET_OS_MAC_DESKTOP  (TARGET_OS_MAC && \
