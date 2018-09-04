@@ -517,27 +517,6 @@
 			remoteGlobalIDString = E46DBC1A14EE10C80001F9F6;
 			remoteInfo = libdispatch_static;
 		};
-		E47D6ECA125FEB9D0070D91C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E4EC118F12514302000DDBD1;
-			remoteInfo = "libdispatch up resolved";
-		};
-		E47D6ECC125FEBA10070D91C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E4EC121612514715000DDBD1;
-			remoteInfo = "libdispatch mp resolved";
-		};
-		E49BB6F71E7074C100868613 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E49BB6CE1E70748100868613;
-			remoteInfo = "libdispatch alt resolved";
-		};
 		E4B515DA164B317700E003AF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
@@ -1380,9 +1359,6 @@
 			);
 			dependencies = (
 				6EF0B27E1BA8C5BF007FA4F6 /* PBXTargetDependency */,
-				E47D6ECD125FEBA10070D91C /* PBXTargetDependency */,
-				E47D6ECB125FEB9D0070D91C /* PBXTargetDependency */,
-				E49BB6F81E7074C100868613 /* PBXTargetDependency */,
 				E4B515DB164B317700E003AF /* PBXTargetDependency */,
 				C01866C21C597AEA0040FC07 /* PBXTargetDependency */,
 				E437F0D614F7441F00F0B997 /* PBXTargetDependency */,
@@ -2265,21 +2241,6 @@
 			isa = PBXTargetDependency;
 			target = E46DBC1A14EE10C80001F9F6 /* libdispatch up static */;
 			targetProxy = E437F0D514F7441F00F0B997 /* PBXContainerItemProxy */;
-		};
-		E47D6ECB125FEB9D0070D91C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E4EC118F12514302000DDBD1 /* libdispatch up resolved */;
-			targetProxy = E47D6ECA125FEB9D0070D91C /* PBXContainerItemProxy */;
-		};
-		E47D6ECD125FEBA10070D91C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E4EC121612514715000DDBD1 /* libdispatch mp resolved */;
-			targetProxy = E47D6ECC125FEBA10070D91C /* PBXContainerItemProxy */;
-		};
-		E49BB6F81E7074C100868613 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E49BB6CE1E70748100868613 /* libdispatch alt resolved */;
-			targetProxy = E49BB6F71E7074C100868613 /* PBXContainerItemProxy */;
 		};
 		E4B515DB164B317700E003AF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
