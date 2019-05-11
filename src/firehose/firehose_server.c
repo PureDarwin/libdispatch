@@ -140,8 +140,8 @@ static inline bool
 firehose_client_wakeup(firehose_client_t fc, bool for_io)
 {
 	uintptr_t canceled_bit = FC_STATE_CANCELED(for_io);
-	uintptr_t enqueued_bit = FC_STATE_ENQUEUED(for_io);
-	uintptr_t old_state, new_state;
+	unsigned short enqueued_bit = (unsigned short)FC_STATE_ENQUEUED(for_io);
+	unsigned short old_state, new_state;
 
 	os_atomic_rmw_loop(&fc->fc_state, old_state, new_state, relaxed, {
 		if (old_state & canceled_bit) {
@@ -161,10 +161,10 @@ OS_ALWAYS_INLINE
 static inline void
 firehose_client_start_cancel(firehose_client_t fc, bool for_io)
 {
-	uintptr_t canceling_bit = FC_STATE_CANCELING(for_io);
-	uintptr_t canceled_bit = FC_STATE_CANCELED(for_io);
-	uintptr_t enqueued_bit = FC_STATE_ENQUEUED(for_io);
-	uintptr_t old_state, new_state;
+	unsigned short canceling_bit = (unsigned short)FC_STATE_CANCELING(for_io);
+	unsigned short canceled_bit = (unsigned short)FC_STATE_CANCELED(for_io);
+	unsigned short enqueued_bit = (unsigned short)FC_STATE_ENQUEUED(for_io);
+	unsigned short old_state, new_state;
 
 	os_atomic_rmw_loop(&fc->fc_state, old_state, new_state, relaxed, {
 		if (old_state & (canceled_bit | canceling_bit)) {
@@ -180,10 +180,10 @@ OS_ALWAYS_INLINE
 static inline bool
 firehose_client_dequeue(firehose_client_t fc, bool for_io)
 {
-	uintptr_t canceling_bit = FC_STATE_CANCELING(for_io);
-	uintptr_t canceled_bit = FC_STATE_CANCELED(for_io);
-	uintptr_t enqueued_bit = FC_STATE_ENQUEUED(for_io);
-	uintptr_t old_state, new_state;
+	unsigned short canceling_bit = (unsigned short)FC_STATE_CANCELING(for_io);
+	unsigned short canceled_bit = (unsigned short)FC_STATE_CANCELED(for_io);
+	unsigned short enqueued_bit = (unsigned short)FC_STATE_ENQUEUED(for_io);
+	unsigned short old_state, new_state;
 
 	os_atomic_rmw_loop(&fc->fc_state, old_state, new_state, relaxed, {
 		new_state = old_state & ~(canceling_bit | enqueued_bit);
