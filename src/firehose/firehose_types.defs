@@ -21,7 +21,6 @@
 #include <mach/std_types.defs>
 #include <mach/mach_types.defs>
 
-import <firehose/firehose_types_private.h>;
 import <sys/qos.h>;
 
 type firehose_push_reply_t = struct [2] of uint64_t;
