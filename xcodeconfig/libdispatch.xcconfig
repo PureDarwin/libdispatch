@@ -18,11 +18,22 @@
 // @APPLE_APACHE_LICENSE_HEADER_END@
 //
 
-#include "<DEVELOPER_DIR>/Makefiles/CoreOS/Xcode/BSD.xcconfig"
-#include "<DEVELOPER_DIR>/AppleInternal/XcodeConfig/PlatformSupport.xcconfig"
+// Begin BSD.xcconfig
+ARCHS = $(ARCHS_STANDARD_32_64_BIT);
+CODE_SIGN_IDENTITY = -;
+CURRENT_PROJECT_VERSION = $(RC_ProjectSourceVersion);
+DEAD_CODE_STRIPPING = YES;
+DEBUG_INFORMATION_FORMAT = dwarf-with-dsym;
+PREBINDING = NO;
+// Current Mac OS
+SDKROOT = macosx;
+//USE_HEADERMAP = NO;
+VERSION_INFO_PREFIX = __attribute__((visibility("hidden"))) __
+VERSIONING_SYSTEM = apple-generic;
+// End BSD.xcconfig
 
-SDKROOT = macosx.internal
-SUPPORTED_PLATFORMS = macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator
+SDKROOT = macosx
+SUPPORTED_PLATFORMS = macosx
 PRODUCT_NAME = libdispatch
 EXECUTABLE_PREFIX =
 INSTALL_PATH = /usr/lib/system
