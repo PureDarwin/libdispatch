@@ -770,7 +770,7 @@ extern bool _dispatch_memory_warn;
 
 #if HAVE_LIBPROC_INTERNAL_H
 #include <libproc.h>
-#include <libproc_internal.h>
+//#include <libproc_internal.h>
 #ifndef DISPATCH_USE_IMPORTANCE_ASSERTION
 #define DISPATCH_USE_IMPORTANCE_ASSERTION 1
 #endif
