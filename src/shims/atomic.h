@@ -32,6 +32,7 @@
 #endif
 
 #include <stdatomic.h>
+#include <os/base_private.h>
 
 #define memory_order_ordered    memory_order_seq_cst
 #define memory_order_dependency memory_order_acquire
