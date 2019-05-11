@@ -258,7 +258,6 @@ upcast(dispatch_object_t dou)
 #if __has_include(<os/reason_private.h>)
 #define HAVE_OS_FAULT_WITH_PAYLOAD 1
 #include <os/reason_private.h>
-#include <os/variant_private.h>
 #else
 #define HAVE_OS_FAULT_WITH_PAYLOAD 0
 #endif
