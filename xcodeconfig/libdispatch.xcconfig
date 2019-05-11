@@ -18,6 +18,8 @@
 // @APPLE_APACHE_LICENSE_HEADER_END@
 //
 
+#include "../darwinbuild.xcconfig"
+
 // Begin BSD.xcconfig
 CODE_SIGN_IDENTITY = -;
 CURRENT_PROJECT_VERSION = $(RC_ProjectSourceVersion);
@@ -38,8 +40,7 @@ PUBLIC_HEADERS_FOLDER_PATH = /usr/include/dispatch
 PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include/dispatch
 OS_PUBLIC_HEADERS_FOLDER_PATH = /usr/include/os
 OS_PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include/os
-HEADER_SEARCH_PATHS = $(PROJECT_DIR) $(PROJECT_DIR)/private $(PROJECT_DIR)/src
-LIBRARY_SEARCH_PATHS = $(SDKROOT)/usr/lib/system $(SDKROOT)/usr/local/lib
+HEADER_SEARCH_PATHS = $(PROJECT_DIR) $(PROJECT_DIR)/private $(PROJECT_DIR)/src $(inherited)
 INSTALLHDRS_SCRIPT_PHASE = YES
 ALWAYS_SEARCH_USER_PATHS = NO
 USE_HEADERMAP = NO
