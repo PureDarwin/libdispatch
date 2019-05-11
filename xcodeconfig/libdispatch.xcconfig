@@ -24,8 +24,6 @@ CURRENT_PROJECT_VERSION = $(RC_ProjectSourceVersion);
 DEAD_CODE_STRIPPING = YES;
 DEBUG_INFORMATION_FORMAT = dwarf-with-dsym;
 PREBINDING = NO;
-// Current Mac OS
-SDKROOT = macosx;
 //USE_HEADERMAP = NO;
 VERSION_INFO_PREFIX = __attribute__((visibility("hidden"))) __
 VERSIONING_SYSTEM = apple-generic;
