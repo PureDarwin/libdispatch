@@ -647,6 +647,29 @@ struct dispatch_queue_global_s {
 	DISPATCH_QUEUE_ROOT_CLASS_HEADER(lane);
 } DISPATCH_CACHELINE_ALIGN;
 
+typedef struct dispatch_pthread_root_queue_observer_hooks_s {
+	void (*queue_will_execute)(dispatch_queue_t queue);
+	void (*queue_did_execute)(dispatch_queue_t queue);
+} dispatch_pthread_root_queue_observer_hooks_s;
+typedef dispatch_pthread_root_queue_observer_hooks_s
+*dispatch_pthread_root_queue_observer_hooks_t;
+
+#ifdef __APPLE__
+#define DISPATCH_IOHID_SPI 1
+
+DISPATCH_EXPORT DISPATCH_MALLOC DISPATCH_RETURNS_RETAINED DISPATCH_WARN_RESULT
+DISPATCH_NOTHROW DISPATCH_NONNULL4
+dispatch_queue_t
+_dispatch_pthread_root_queue_create_with_observer_hooks_4IOHID(
+	const char *label, unsigned long flags, const pthread_attr_t *attr,
+	dispatch_pthread_root_queue_observer_hooks_t observer_hooks,
+	dispatch_block_t configure);
+
+DISPATCH_EXPORT DISPATCH_PURE DISPATCH_WARN_RESULT DISPATCH_NOTHROW
+bool
+_dispatch_queue_is_exclusively_owned_by_current_thread_4IOHID(dispatch_queue_t queue);
+
+#endif // __APPLE__
 #if DISPATCH_USE_PTHREAD_POOL
 typedef struct dispatch_pthread_root_queue_context_s {
 	pthread_attr_t dpq_thread_attr;
@@ -1200,30 +1223,5 @@ dispatch_qos_t _dispatch_continuation_init_slow(dispatch_continuation_t dc,
 		dispatch_queue_class_t dqu, dispatch_block_flags_t flags);
 
 #endif /* __BLOCKS__ */
-
-typedef struct dispatch_pthread_root_queue_observer_hooks_s {
-	void (*queue_will_execute)(dispatch_queue_t queue);
-	void (*queue_did_execute)(dispatch_queue_t queue);
-} dispatch_pthread_root_queue_observer_hooks_s;
-typedef dispatch_pthread_root_queue_observer_hooks_s
-		*dispatch_pthread_root_queue_observer_hooks_t;
-
-#ifdef __APPLE__
-#define DISPATCH_IOHID_SPI 1
-
-DISPATCH_EXPORT DISPATCH_MALLOC DISPATCH_RETURNS_RETAINED DISPATCH_WARN_RESULT
-DISPATCH_NOTHROW DISPATCH_NONNULL4
-dispatch_queue_t
-_dispatch_pthread_root_queue_create_with_observer_hooks_4IOHID(
-	const char *label, unsigned long flags, const pthread_attr_t *attr,
-	dispatch_pthread_root_queue_observer_hooks_t observer_hooks,
-	dispatch_block_t configure);
-
-DISPATCH_EXPORT DISPATCH_PURE DISPATCH_WARN_RESULT DISPATCH_NOTHROW
-bool
-_dispatch_queue_is_exclusively_owned_by_current_thread_4IOHID(
-		dispatch_queue_t queue);
-
-#endif // __APPLE__
 
 #endif
