@@ -48,6 +48,14 @@ firehose_bitmap_first_set(uint64_t bitmap)
 }
 #endif
 
+static firehose_chunk_t firehose_buffer_chunk_for_address(void *addr);
+OS_ALWAYS_INLINE static firehose_chunk_t firehose_buffer_ref_to_chunk(firehose_buffer_t fb, firehose_chunk_ref_t ref);
+static uint8_t firehose_buffer_qos_bits_propagate(void);
+static void firehose_buffer_stream_flush(firehose_buffer_t fb, firehose_stream_t stream);
+static void firehose_buffer_tracepoint_flush(firehose_buffer_t fb, firehose_tracepoint_t ft, firehose_tracepoint_id_u ftid);
+firehose_tracepoint_t firehose_buffer_tracepoint_reserve_slow(firehose_buffer_t fb, firehose_tracepoint_query_t ask, uint8_t **privptr);
+OS_NOINLINE void firehose_buffer_ring_enqueue(firehose_buffer_t fb, firehose_chunk_ref_t ref);
+
 #pragma mark -
 #pragma mark Mach Misc.
 #ifndef KERNEL
@@ -165,7 +173,6 @@ firehose_buffer_ref_to_chunk(firehose_buffer_t fb, firehose_chunk_ref_t ref)
 	return fb->fb_chunks + ref;
 }
 
-#ifndef FIREHOSE_SERVER
 #if DISPATCH_PURE_C
 
 OS_ALWAYS_INLINE
@@ -534,8 +541,6 @@ firehose_buffer_bank_relinquish_slot(firehose_buffer_t fb, bool for_io)
 			relaxed);
 }
 #endif // !KERNEL
-
-#endif // !defined(FIREHOSE_SERVER)
 
 #endif // DISPATCH_PURE_C
 

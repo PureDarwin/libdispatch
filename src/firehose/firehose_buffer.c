@@ -1384,7 +1384,7 @@ void
 __firehose_buffer_tracepoint_flush(firehose_tracepoint_t ft,
 		firehose_tracepoint_id_u ftid)
 {
-	return firehose_buffer_tracepoint_flush(kernel_firehose_buffer, ft, ftid);
+	firehose_buffer_tracepoint_flush(kernel_firehose_buffer, ft, ftid);
 }
 
 void
