@@ -193,7 +193,6 @@
 		B683588F1FA77F5A00AA0D58 /* time_private.h in Headers */ = {isa = PBXBuildFile; fileRef = B683588A1FA77F4900AA0D58 /* time_private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B68358901FA77F5B00AA0D58 /* time_private.h in Headers */ = {isa = PBXBuildFile; fileRef = B683588A1FA77F4900AA0D58 /* time_private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		C00B0DF21C5AEBBE000330B3 /* protocol.defs in Sources */ = {isa = PBXBuildFile; fileRef = FC7BED950E8361E600161930 /* protocol.defs */; settings = {ATTRIBUTES = (Client, Server, ); }; };
-		C00B0DF31C5AEBBE000330B3 /* resolver.c in Sources */ = {isa = PBXBuildFile; fileRef = E44EBE371251656400645D88 /* resolver.c */; };
 		C00B0DF41C5AEBBE000330B3 /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = E44EBE3B1251659900645D88 /* init.c */; };
 		C00B0DF51C5AEBBE000330B3 /* queue.c in Sources */ = {isa = PBXBuildFile; fileRef = FC7BED8A0E8361E600161930 /* queue.c */; };
 		C00B0DF61C5AEBBE000330B3 /* firehose_buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 72DEAA971AE181D300289540 /* firehose_buffer.c */; };
@@ -213,7 +212,6 @@
 		C00B0E041C5AEBBE000330B3 /* transform.c in Sources */ = {isa = PBXBuildFile; fileRef = C9C5F80D143C1771006DC718 /* transform.c */; };
 		C00B0E051C5AEBBE000330B3 /* allocator.c in Sources */ = {isa = PBXBuildFile; fileRef = 2BBF5A62154B64F5002B20F9 /* allocator.c */; };
 		C01866A61C5973210040FC07 /* protocol.defs in Sources */ = {isa = PBXBuildFile; fileRef = FC7BED950E8361E600161930 /* protocol.defs */; settings = {ATTRIBUTES = (Client, Server, ); }; };
-		C01866A71C5973210040FC07 /* resolver.c in Sources */ = {isa = PBXBuildFile; fileRef = E44EBE371251656400645D88 /* resolver.c */; };
 		C01866A81C5973210040FC07 /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = E44EBE3B1251659900645D88 /* init.c */; };
 		C01866A91C5973210040FC07 /* queue.c in Sources */ = {isa = PBXBuildFile; fileRef = FC7BED8A0E8361E600161930 /* queue.c */; };
 		C01866AA1C5973210040FC07 /* firehose_buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 72DEAA971AE181D300289540 /* firehose_buffer.c */; };
@@ -305,7 +303,6 @@
 		E49BB6D41E70748100868613 /* firehose.defs in Sources */ = {isa = PBXBuildFile; fileRef = 72DEAA9B1AE1B0BD00289540 /* firehose.defs */; };
 		E49BB6D51E70748100868613 /* firehose_buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 72DEAA971AE181D300289540 /* firehose_buffer.c */; };
 		E49BB6D61E70748100868613 /* event_kevent.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E5ACCB01D3C4CFB007DA2B4 /* event_kevent.c */; };
-		E49BB6D71E70748100868613 /* resolver.c in Sources */ = {isa = PBXBuildFile; fileRef = E44EBE371251656400645D88 /* resolver.c */; };
 		E49BB6D81E70748100868613 /* mach.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E4BACBC1D48A41500B562AE /* mach.c */; };
 		E49BB6D91E70748100868613 /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = E44EBE3B1251659900645D88 /* init.c */; };
 		E49BB6DA1E70748100868613 /* queue.c in Sources */ = {isa = PBXBuildFile; fileRef = FC7BED8A0E8361E600161930 /* queue.c */; };
@@ -328,7 +325,6 @@
 		E49BB6EB1E70748100868613 /* allocator.c in Sources */ = {isa = PBXBuildFile; fileRef = 2BBF5A62154B64F5002B20F9 /* allocator.c */; };
 		E49BB6EC1E70748100868613 /* data.m in Sources */ = {isa = PBXBuildFile; fileRef = E420866F16027AE500EEE210 /* data.m */; };
 		E49BB6ED1E70748100868613 /* voucher.c in Sources */ = {isa = PBXBuildFile; fileRef = E44A8E6A1805C3E0009FFDB6 /* voucher.c */; };
-		E49F2423125D3C960057C971 /* resolver.c in Sources */ = {isa = PBXBuildFile; fileRef = E44EBE371251656400645D88 /* resolver.c */; };
 		E49F2499125D48D80057C971 /* resolver.c in Sources */ = {isa = PBXBuildFile; fileRef = E44EBE371251656400645D88 /* resolver.c */; };
 		E49F24AB125D57FA0057C971 /* dispatch.h in Headers */ = {isa = PBXBuildFile; fileRef = FC7BED960E8361E600161930 /* dispatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E49F24AC125D57FA0057C971 /* base.h in Headers */ = {isa = PBXBuildFile; fileRef = 72CC942F0ECCD8750031B751 /* base.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -358,7 +354,6 @@
 		E49F24C5125D57FA0057C971 /* perfmon.h in Headers */ = {isa = PBXBuildFile; fileRef = FC1832A2109923C7003403D5 /* perfmon.h */; };
 		E49F24C6125D57FA0057C971 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = FC9C70E7105EC9620074F9CA /* config.h */; };
 		E49F24C8125D57FA0057C971 /* protocol.defs in Sources */ = {isa = PBXBuildFile; fileRef = FC7BED950E8361E600161930 /* protocol.defs */; settings = {ATTRIBUTES = (Client, Server, ); }; };
-		E49F24C9125D57FA0057C971 /* resolver.c in Sources */ = {isa = PBXBuildFile; fileRef = E44EBE371251656400645D88 /* resolver.c */; };
 		E49F24CA125D57FA0057C971 /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = E44EBE3B1251659900645D88 /* init.c */; };
 		E49F24CB125D57FA0057C971 /* queue.c in Sources */ = {isa = PBXBuildFile; fileRef = FC7BED8A0E8361E600161930 /* queue.c */; };
 		E49F24CC125D57FA0057C971 /* semaphore.c in Sources */ = {isa = PBXBuildFile; fileRef = 721F5CCE0F15553500FF03A6 /* semaphore.c */; };
@@ -374,7 +369,6 @@
 		E4B3C3FF18C50D0E0039F49F /* voucher_activity_private.h in Headers */ = {isa = PBXBuildFile; fileRef = E4B3C3FD18C50D000039F49F /* voucher_activity_private.h */; };
 		E4B515BD164B2DA300E003AF /* provider.d in Sources */ = {isa = PBXBuildFile; fileRef = E43570B8126E93380097AB9F /* provider.d */; };
 		E4B515BE164B2DA300E003AF /* protocol.defs in Sources */ = {isa = PBXBuildFile; fileRef = FC7BED950E8361E600161930 /* protocol.defs */; settings = {ATTRIBUTES = (Client, Server, ); }; };
-		E4B515BF164B2DA300E003AF /* resolver.c in Sources */ = {isa = PBXBuildFile; fileRef = E44EBE371251656400645D88 /* resolver.c */; };
 		E4B515C0164B2DA300E003AF /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = E44EBE3B1251659900645D88 /* init.c */; };
 		E4B515C1164B2DA300E003AF /* queue.c in Sources */ = {isa = PBXBuildFile; fileRef = FC7BED8A0E8361E600161930 /* queue.c */; };
 		E4B515C2164B2DA300E003AF /* semaphore.c in Sources */ = {isa = PBXBuildFile; fileRef = 721F5CCE0F15553500FF03A6 /* semaphore.c */; };
@@ -1761,7 +1755,6 @@
 				C00B0DF21C5AEBBE000330B3 /* protocol.defs in Sources */,
 				C00B0DF71C5AEBBE000330B3 /* firehose.defs in Sources */,
 				C00B0DFA1C5AEBBE000330B3 /* firehose_reply.defs in Sources */,
-				C00B0DF31C5AEBBE000330B3 /* resolver.c in Sources */,
 				C00B0DF41C5AEBBE000330B3 /* init.c in Sources */,
 				C00B0DFE1C5AEBBE000330B3 /* object.c in Sources */,
 				C00B0DF81C5AEBBE000330B3 /* block.cpp in Sources */,
@@ -1793,7 +1786,6 @@
 				C01866A61C5973210040FC07 /* protocol.defs in Sources */,
 				C01866AB1C5973210040FC07 /* firehose.defs in Sources */,
 				C01866AE1C5973210040FC07 /* firehose_reply.defs in Sources */,
-				C01866A71C5973210040FC07 /* resolver.c in Sources */,
 				C01866A81C5973210040FC07 /* init.c in Sources */,
 				C01866B21C5973210040FC07 /* object.c in Sources */,
 				C01866AC1C5973210040FC07 /* block.cpp in Sources */,
@@ -1861,7 +1853,6 @@
 				E49BB6D21E70748100868613 /* protocol.defs in Sources */,
 				E49BB6D41E70748100868613 /* firehose.defs in Sources */,
 				E49BB6DD1E70748100868613 /* firehose_reply.defs in Sources */,
-				E49BB6D71E70748100868613 /* resolver.c in Sources */,
 				E49BB6D91E70748100868613 /* init.c in Sources */,
 				E49BB6E01E70748100868613 /* object.c in Sources */,
 				E49BB6EA1E70748100868613 /* object.m in Sources */,
@@ -1896,7 +1887,6 @@
 				E49F24C8125D57FA0057C971 /* protocol.defs in Sources */,
 				6ED64B461BBD89AF00C35F4D /* firehose.defs in Sources */,
 				6ED64B4A1BBD89BD00C35F4D /* firehose_reply.defs in Sources */,
-				E49F24C9125D57FA0057C971 /* resolver.c in Sources */,
 				E49F24CA125D57FA0057C971 /* init.c in Sources */,
 				E49F24CF125D57FA0057C971 /* object.c in Sources */,
 				E4FC3265145F46C9002FBDDB /* object.m in Sources */,
@@ -1931,7 +1921,6 @@
 				E4B515BE164B2DA300E003AF /* protocol.defs in Sources */,
 				6ED64B481BBD89B100C35F4D /* firehose.defs in Sources */,
 				6ED64B4B1BBD89BE00C35F4D /* firehose_reply.defs in Sources */,
-				E4B515BF164B2DA300E003AF /* resolver.c in Sources */,
 				E4B515C0164B2DA300E003AF /* init.c in Sources */,
 				E4B515C5164B2DA300E003AF /* object.c in Sources */,
 				E4B515CC164B2DA300E003AF /* object.m in Sources */,
@@ -1967,7 +1956,6 @@
 				E44EBE5612517EBE00645D88 /* protocol.defs in Sources */,
 				6EBEC7E51BBDD30C009B1596 /* firehose.defs in Sources */,
 				6EBEC7E81BBDD324009B1596 /* firehose_reply.defs in Sources */,
-				E49F2423125D3C960057C971 /* resolver.c in Sources */,
 				E44EBE5712517EBE00645D88 /* init.c in Sources */,
 				E4EC121E12514715000DDBD1 /* object.c in Sources */,
 				E4FC3267145F46C9002FBDDB /* object.m in Sources */,
