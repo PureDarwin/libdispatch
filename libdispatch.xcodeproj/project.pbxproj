@@ -90,7 +90,6 @@
 		6E040C751C499CE600411A2E /* firehose_buffer_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EDF10831BBB487E007F14BF /* firehose_buffer_private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		6E21F2E81BBB23FA0000C6A5 /* firehose_server_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E21F2E41BBB23F00000C6A5 /* firehose_server_internal.h */; };
 		6E21F2E91BBB240E0000C6A5 /* firehose_server.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E21F2E51BBB23F00000C6A5 /* firehose_server.c */; };
-		6E29394D1FB9527F00FDAC90 /* libdispatch.plist in Copy Ariadne Plist */ = {isa = PBXBuildFile; fileRef = 6E29394C1FB9526E00FDAC90 /* libdispatch.plist */; };
 		6E393F981BD60F8D005A551E /* firehose_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EF0B26A1BA8C4AE007FA4F6 /* firehose_internal.h */; };
 		6E4BACBD1D48A41500B562AE /* mach.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E4BACBC1D48A41500B562AE /* mach.c */; };
 		6E4BACC21D48A42000B562AE /* mach.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E4BACBC1D48A41500B562AE /* mach.c */; };
@@ -492,17 +491,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		6E2939471FB9522D00FDAC90 /* Copy Ariadne Plist */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
-			dstPath = /AppleInternal/Library/Ariadne/Plists;
-			dstSubfolderSpec = 0;
-			files = (
-				6E29394D1FB9527F00FDAC90 /* libdispatch.plist in Copy Ariadne Plist */,
-			);
-			name = "Copy Ariadne Plist";
-			runOnlyForDeploymentPostprocessing = 1;
-		};
 		6EA283D61CAB933E0041B2E0 /* Copy Trace Definitions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 8;
@@ -531,7 +519,6 @@
 		6E21F2E41BBB23F00000C6A5 /* firehose_server_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = firehose_server_internal.h; sourceTree = "<group>"; };
 		6E21F2E51BBB23F00000C6A5 /* firehose_server.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = firehose_server.c; sourceTree = "<group>"; };
 		6E2464E21F5E67E20031ADD9 /* check-order.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "check-order.sh"; sourceTree = "<group>"; };
-		6E29394C1FB9526E00FDAC90 /* libdispatch.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = libdispatch.plist; sourceTree = "<group>"; };
 		6E49BF2420E34B43002624FC /* libdispatch.clean */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libdispatch.clean; sourceTree = "<group>"; };
 		6E49BF2920E34B44002624FC /* libdispatch.dirty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libdispatch.dirty; sourceTree = "<group>"; };
 		6E4BACBC1D48A41500B562AE /* mach.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mach.c; sourceTree = "<group>"; };
@@ -726,7 +713,6 @@
 				C9C5F80D143C1771006DC718 /* transform.c */,
 				E44A8E6A1805C3E0009FFDB6 /* voucher.c */,
 				6EA283D01CAB93270041B2E0 /* libdispatch.codes */,
-				6E29394C1FB9526E00FDAC90 /* libdispatch.plist */,
 				FC7BED950E8361E600161930 /* protocol.defs */,
 				E43570B8126E93380097AB9F /* provider.d */,
 				6E5ACCAF1D3BF2A0007DA2B4 /* event */,
@@ -1274,7 +1260,6 @@
 				E4EB4A2B14C3720B00AA0FA9 /* Install Headers */,
 				4CED8B9D0EEDF8B600AF99AB /* Install Manpages */,
 				6E2464DD1F5E67900031ADD9 /* Validate symbol ordering */,
-				6E2939471FB9522D00FDAC90 /* Copy Ariadne Plist */,
 			);
 			buildRules = (
 			);
