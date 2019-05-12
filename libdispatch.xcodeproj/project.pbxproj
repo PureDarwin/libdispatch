@@ -615,13 +615,10 @@
 		E44A8E6A1805C3E0009FFDB6 /* voucher.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = voucher.c; sourceTree = "<group>"; };
 		E44A8E711805C473009FFDB6 /* voucher_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = voucher_private.h; sourceTree = "<group>"; };
 		E44A8E7418066276009FFDB6 /* voucher_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = voucher_internal.h; sourceTree = "<group>"; };
-		E44EBE331251654000645D88 /* resolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resolver.h; sourceTree = "<group>"; };
-		E44EBE371251656400645D88 /* resolver.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = resolver.c; sourceTree = "<group>"; };
 		E44EBE3B1251659900645D88 /* init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = init.c; sourceTree = "<group>"; };
 		E44F9DA816543F79001DCD38 /* introspection_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = introspection_internal.h; sourceTree = "<group>"; };
 		E454569214746F1B00106147 /* object_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = object_private.h; sourceTree = "<group>"; };
 		E463024F1761603C00E11F4C /* atomic_sfb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = atomic_sfb.h; sourceTree = "<group>"; };
-		E47D6BB5125F0F800070D91C /* resolved.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resolved.h; sourceTree = "<group>"; };
 		E48AF55916E70FD9004105FF /* io_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = io_private.h; path = private/io_private.h; sourceTree = SOURCE_ROOT; tabWidth = 8; };
 		E48EC97B1835BADD00EAC4F1 /* yield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yield.h; sourceTree = "<group>"; };
 		E49BB6F21E70748100868613 /* libdispatch_armv81.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libdispatch_armv81.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -860,19 +857,8 @@
 				E4BA743413A88D390095BDF1 /* config */,
 				E40041E4125E71150022B135 /* xcodeconfig */,
 				E49F259C125D664F0057C971 /* xcodescripts */,
-				E47D6BCA125F10F70070D91C /* resolver */,
 			);
 			name = "Build Support";
-			sourceTree = "<group>";
-		};
-		E47D6BCA125F10F70070D91C /* resolver */ = {
-			isa = PBXGroup;
-			children = (
-				E47D6BB5125F0F800070D91C /* resolved.h */,
-				E44EBE331251654000645D88 /* resolver.h */,
-				E44EBE371251656400645D88 /* resolver.c */,
-			);
-			path = resolver;
 			sourceTree = "<group>";
 		};
 		E49F259C125D664F0057C971 /* xcodescripts */ = {
