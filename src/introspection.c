@@ -482,14 +482,13 @@ _dispatch_introspection_queue_fake_sync_push_pop(dispatch_queue_t dq,
 {
 	// fake just what introspection really needs here: flags, func, ctxt, queue,
 	// dc_priority, and of course waiter
-	struct dispatch_sync_context_s dsc = {
-		.dc_priority = _dispatch_get_priority(),
-		.dc_flags    = DC_FLAG_SYNC_WAITER | dc_flags,
-		.dc_other    = dq,
-		.dsc_func    = func,
-		.dsc_ctxt    = ctxt,
-		.dsc_waiter  = _dispatch_tid_self(),
-	};
+	static struct dispatch_sync_context_s dsc;
+	dsc.dc_priority = _dispatch_get_priority();
+	dsc.dc_flags    = DC_FLAG_SYNC_WAITER | dc_flags;
+	dsc.dc_other    = dq;
+	dsc.dsc_func    = func;
+	dsc.dsc_ctxt    = ctxt;
+	dsc.dsc_waiter  = _dispatch_tid_self();
 
 	_dispatch_trace_item_push(dq, &dsc);
 	_dispatch_trace_item_pop(dq, &dsc);
