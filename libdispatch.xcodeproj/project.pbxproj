@@ -1947,6 +1947,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E4B515D9164B2E9B00E003AF /* libdispatch-introspection.xcconfig */;
 			buildSettings = {
+				BUILD_VARIANTS = introspection;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 			};
 			name = Release;
@@ -1955,6 +1956,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E4B515D9164B2E9B00E003AF /* libdispatch-introspection.xcconfig */;
 			buildSettings = {
+				BUILD_VARIANTS = introspection;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 			};
 			name = Debug;
