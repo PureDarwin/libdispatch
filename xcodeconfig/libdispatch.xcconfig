@@ -109,4 +109,4 @@ OTHER_MIGFLAGS = -novouchers
 
 COPY_HEADERS_RUN_UNIFDEF = YES
 COPY_HEADERS_UNIFDEF_FLAGS = -U__DISPATCH_BUILDING_DISPATCH__ -U__linux__ -DTARGET_OS_WIN32=0 -U__ANDROID__
-WARNING_CFLAGS = $(inherited) -Wno-unused-function -Wno-implicit-function-declaration -Wno-strict-prototypes
+WARNING_CFLAGS = $(inherited) -Wno-unused-function -Wno-implicit-function-declaration -Wno-strict-prototypes -Wno-missing-prototypes
