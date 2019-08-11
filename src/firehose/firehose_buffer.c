@@ -82,7 +82,7 @@ static void _dispatch_firehose_gate_wait(dispatch_gate_t l, uint32_t flags);
 #include "firehose_buffer_internal.h"
 #include "firehose_inline_internal.h"
 #else
-#include "internal.h"
+#include "../internal.h"
 #include "firehose.h" // MiG
 #include "firehose_replyServer.h" // MiG
 #endif
