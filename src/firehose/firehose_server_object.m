@@ -18,7 +18,7 @@
  * @APPLE_APACHE_LICENSE_HEADER_END@
  */
 
-#include "internal.h"
+#include "../internal.h"
 
 #if !USE_OBJC || _OS_OBJECT_OBJC_ARC
 #error the firehose server requires the objc-runtime, no ARC
