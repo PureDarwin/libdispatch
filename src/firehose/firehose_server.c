@@ -22,7 +22,7 @@
 #include <sys/ioctl.h>
 #include <sys/ttycom.h>
 #include <sys/uio.h>
-#include "internal.h"
+#include "../internal.h"
 #include "firehoseServer.h" // MiG
 #include "firehose_reply.h" // MiG
 
