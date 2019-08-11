@@ -30,7 +30,7 @@
 #if __has_include(<config/config_ac.h>)
 #include <config/config_ac.h>
 #else
-#include <config/config.h>
+#include "../config/config.h"
 #endif
 
 #define __DISPATCH_BUILDING_DISPATCH__
