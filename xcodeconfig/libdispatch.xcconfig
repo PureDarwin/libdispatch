@@ -18,11 +18,7 @@
 // @APPLE_APACHE_LICENSE_HEADER_END@
 //
 
-#include "<DEVELOPER_DIR>/Makefiles/CoreOS/Xcode/BSD.xcconfig"
-#include "<DEVELOPER_DIR>/AppleInternal/XcodeConfig/PlatformSupport.xcconfig"
-
-SDKROOT = macosx.internal
-SUPPORTED_PLATFORMS = macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator
+SUPPORTED_PLATFORMS = macosx
 PRODUCT_NAME = libdispatch
 EXECUTABLE_PREFIX =
 
