@@ -18,6 +18,8 @@
 // @APPLE_APACHE_LICENSE_HEADER_END@
 //
 
+#include "darwinbuild.xcconfig"
+
 PRODUCT_NAME = libdispatch_dyld_stub
 INSTALL_PATH = /usr/local/lib/dyld_stub
 BUILD_VARIANTS = normal

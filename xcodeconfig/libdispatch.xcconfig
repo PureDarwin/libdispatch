@@ -18,6 +18,8 @@
 // @APPLE_APACHE_LICENSE_HEADER_END@
 //
 
+#include "darwinbuild.xcconfig"
+
 SUPPORTED_PLATFORMS = macosx
 PRODUCT_NAME = libdispatch
 EXECUTABLE_PREFIX =
