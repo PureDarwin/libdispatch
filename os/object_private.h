@@ -189,7 +189,7 @@ OS_SWIFT_UNAVAILABLE("Unavailable in Swift")
 void
 _os_object_release(_os_object_t object);
 
-API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0), bridgeos(4.0))
+API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0))
 OS_OBJECT_EXPORT OS_OBJECT_NONNULL OS_OBJECT_NOTHROW
 OS_SWIFT_UNAVAILABLE("Unavailable in Swift")
 void

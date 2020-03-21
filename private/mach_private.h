@@ -373,7 +373,7 @@ dispatch_mach_create_f(const char *_Nullable label,
  * @param channel
  * The mach channel to request no senders notifications on.
  */
-API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0), bridgeos(4.0))
+API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0))
 DISPATCH_EXPORT DISPATCH_NONNULL1 DISPATCH_NOTHROW
 void
 dispatch_mach_request_no_senders(dispatch_mach_t channel);
@@ -421,7 +421,7 @@ DISPATCH_OPTIONS(dispatch_mach_flags, uint64_t,
  *
  * @see dispatch_mach_flags_t
  */
-API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0), bridgeos(4.0))
+API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0))
 DISPATCH_EXPORT DISPATCH_NONNULL1 DISPATCH_NOTHROW
 void
 dispatch_mach_set_flags(dispatch_mach_t channel, dispatch_mach_flags_t flags);
@@ -1206,7 +1206,7 @@ dispatch_mach_send_with_result_and_async_reply_4libxpc(dispatch_mach_t channel,
  * @param port
  * The send once right that will be replied to.
  */
-API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0), bridgeos(4.0))
+API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0))
 DISPATCH_EXPORT DISPATCH_NONNULL1 DISPATCH_NONNULL4 DISPATCH_NOTHROW
 void
 dispatch_mach_handoff_reply_f(dispatch_queue_t queue, mach_port_t port,
@@ -1222,7 +1222,7 @@ dispatch_mach_handoff_reply_f(dispatch_queue_t queue, mach_port_t port,
  * @see dispatch_mach_handoff_reply_f
  */
 #ifdef __BLOCKS__
-API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0), bridgeos(4.0))
+API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0))
 DISPATCH_EXPORT DISPATCH_NONNULL1 DISPATCH_NONNULL3 DISPATCH_NOTHROW
 void
 dispatch_mach_handoff_reply(dispatch_queue_t queue, mach_port_t port,

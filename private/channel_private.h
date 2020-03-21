@@ -52,7 +52,7 @@ typedef struct dispatch_channel_invoke_ctxt_s *dispatch_channel_invoke_ctxt_t;
  * @abstract
  * Vtable used by dispatch channels (see dispatch_channel_create).
  */
-API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0), bridgeos(4.0))
+API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0))
 typedef struct dispatch_channel_callbacks_s {
 #define DISPATCH_CHANNEL_CALLBACKS_VERSION 1ul
 	/*! @field dcc_version
@@ -216,7 +216,7 @@ typedef struct dispatch_channel_callbacks_s {
  * @returns
  * The newly created channel.
  */
-API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0), bridgeos(4.0))
+API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0))
 DISPATCH_EXPORT DISPATCH_MALLOC DISPATCH_RETURNS_RETAINED DISPATCH_WARN_RESULT
 DISPATCH_NOTHROW DISPATCH_NONNULL4
 dispatch_channel_t
@@ -256,7 +256,7 @@ dispatch_channel_create(const char *_Nullable label,
  * override. In this case, passing QOS_CLASS_UNSPECIFIED indicates that no
  * additional override should be applied as a result of this wakeup.
  */
-API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0), bridgeos(4.0))
+API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0))
 DISPATCH_EXPORT DISPATCH_NOTHROW DISPATCH_NONNULL_ALL
 void
 dispatch_channel_wakeup(dispatch_channel_t channel, qos_class_t qos_class);
@@ -295,7 +295,7 @@ typedef bool (*dispatch_channel_enumerator_handler_t)(void *_Nullable context, v
  * The handler that will be passed `context` and the opaque work item
  * currently enumerated.
  */
-API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0), bridgeos(4.0))
+API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0))
 DISPATCH_EXPORT DISPATCH_NOTHROW DISPATCH_NONNULL_ALL
 void
 dispatch_channel_foreach_work_item_peek_f(
@@ -323,7 +323,7 @@ typedef bool (^dispatch_channel_enumerator_block_t)(void *item);
  * @param block
  * The block that will be passed the opaque work item currently enumerated.
  */
-API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0), bridgeos(4.0))
+API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0))
 DISPATCH_EXPORT DISPATCH_NOTHROW DISPATCH_NONNULL_ALL
 void
 dispatch_channel_foreach_work_item_peek(
@@ -390,7 +390,7 @@ typedef bool (*dispatch_channel_drain_handler_t)(void *_Nullable context,
  * @param handler
  * The handler that will be passed the context and opaque work item to invoke.
  */
-API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0), bridgeos(4.0))
+API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0))
 DISPATCH_EXPORT DISPATCH_NOTHROW DISPATCH_NONNULL_ALL
 void
 dispatch_channel_drain_f(dispatch_channel_invoke_ctxt_t invoke_context,
@@ -422,7 +422,7 @@ typedef bool (^dispatch_channel_drain_block_t)(void *_Nonnull item,
  * @param block
  * The block that will be passed the opaque work item to invoke.
  */
-API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0), bridgeos(4.0))
+API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0))
 DISPATCH_EXPORT DISPATCH_NOTHROW DISPATCH_NONNULL_ALL
 void
 dispatch_channel_drain(dispatch_channel_invoke_ctxt_t invoke_context,
@@ -453,7 +453,7 @@ dispatch_channel_drain(dispatch_channel_invoke_ctxt_t invoke_context,
  * The dispatch channel to be canceled.
  * The result of passing NULL in this parameter is undefined.
  */
-API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0), bridgeos(4.0))
+API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0))
 DISPATCH_EXPORT DISPATCH_NONNULL_ALL DISPATCH_NOTHROW
 void
 dispatch_channel_cancel(dispatch_channel_t channel);
@@ -471,7 +471,7 @@ dispatch_channel_cancel(dispatch_channel_t channel);
  * @result
  * Non-zero if canceled and zero if not canceled.
  */
-API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0), bridgeos(4.0))
+API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0))
 DISPATCH_EXPORT DISPATCH_NONNULL_ALL DISPATCH_WARN_RESULT DISPATCH_PURE
 DISPATCH_NOTHROW
 long
@@ -498,7 +498,7 @@ dispatch_channel_testcancel(dispatch_channel_t channel);
  * The result of passing NULL in this parameter is undefined.
  */
 #ifdef __BLOCKS__
-API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0), bridgeos(4.0))
+API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0))
 DISPATCH_EXPORT DISPATCH_NONNULL_ALL DISPATCH_NOTHROW
 void
 dispatch_channel_async(dispatch_channel_t queue, dispatch_block_t block);
@@ -528,7 +528,7 @@ dispatch_channel_async(dispatch_channel_t queue, dispatch_block_t block);
  * dispatch_channel_async_f().
  * The result of passing NULL in this parameter is undefined.
  */
-API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0), bridgeos(4.0))
+API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0))
 DISPATCH_EXPORT DISPATCH_NONNULL1 DISPATCH_NONNULL3 DISPATCH_NOTHROW
 void
 dispatch_channel_async_f(dispatch_queue_t queue,
@@ -553,7 +553,7 @@ dispatch_channel_async_f(dispatch_queue_t queue,
  * The application-defined work item to enqueue on the target channel.
  * The result of passing NULL in this parameter is undefined.
  */
-API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0), bridgeos(4.0))
+API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0))
 DISPATCH_EXPORT DISPATCH_NONNULL_ALL DISPATCH_NOTHROW
 void
 dispatch_channel_enqueue(dispatch_channel_t channel, void *item);

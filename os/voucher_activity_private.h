@@ -338,7 +338,7 @@ voucher_activity_get_metadata_buffer(size_t *length);
  * @result
  * Address of preferences buffer, returns NULL on error.
  */
-API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0), bridgeos(3.0))
+API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0))
 OS_VOUCHER_EXPORT OS_WARN_RESULT OS_NOTHROW OS_NONNULL_ALL
 void *
 voucher_activity_get_logging_preferences(size_t *length);
@@ -349,7 +349,7 @@ voucher_activity_get_logging_preferences(size_t *length);
  * @abstract
  * Returns whether the client should send the strings or not.
  */
-API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0), bridgeos(4.0))
+API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0))
 OS_VOUCHER_EXPORT OS_WARN_RESULT OS_NOTHROW
 bool
 voucher_activity_should_send_strings(void);

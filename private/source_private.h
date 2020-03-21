@@ -340,7 +340,7 @@ enum {
  * avoidance when possible.
  */
 enum {
-	DISPATCH_MACH_RECV_SYNC_PEEK DISPATCH_ENUM_API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0), bridgeos(4.0)) =
+	DISPATCH_MACH_RECV_SYNC_PEEK DISPATCH_ENUM_API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0)) =
 			0x00008000,
 };
 

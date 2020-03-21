@@ -314,7 +314,7 @@ dispatch_data_create_with_transform(dispatch_data_t data,
  * A newly created linear mapping for this data object, may return NULL if
  * making the dispatch data contiguous failed to allocate memory.
  */
-API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0), bridgeos(4.0))
+API_AVAILABLE(macos(10.14), ios(12.0), tvos(12.0), watchos(5.0))
 const void *_Nullable
 dispatch_data_get_flattened_bytes_4libxpc(dispatch_data_t data);
 
