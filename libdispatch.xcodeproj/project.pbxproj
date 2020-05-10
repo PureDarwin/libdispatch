@@ -759,7 +759,6 @@
 		E454569214746F1B00106147 /* object_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = object_private.h; sourceTree = "<group>"; };
 		E463024F1761603C00E11F4C /* atomic_sfb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = atomic_sfb.h; sourceTree = "<group>"; };
 		E47D6BB5125F0F800070D91C /* resolved.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resolved.h; sourceTree = "<group>"; };
-		E482F1CD12DBAB590030614D /* postprocess-headers.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "postprocess-headers.sh"; sourceTree = "<group>"; };
 		E48AF55916E70FD9004105FF /* io_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = io_private.h; path = private/io_private.h; sourceTree = SOURCE_ROOT; tabWidth = 8; };
 		E48EC97B1835BADD00EAC4F1 /* yield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yield.h; sourceTree = "<group>"; };
 		E49BB6F21E70748100868613 /* libdispatch_armv81.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libdispatch_armv81.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -782,7 +781,6 @@
 		E4EB4A2A14C36F4E00AA0FA9 /* install-headers.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "install-headers.sh"; sourceTree = "<group>"; };
 		E4EC122D12514715000DDBD1 /* libdispatch_mp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libdispatch_mp.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4ECBAA415253C25002C313C /* mach_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mach_private.h; sourceTree = "<group>"; };
-		E4FB8E90218CD7F8004B7A25 /* install-plists.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "install-plists.sh"; sourceTree = "<group>"; };
 		E4FC3263145F46C9002FBDDB /* object.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = object.m; sourceTree = "<group>"; };
 		F7DC045A2060BBBE00C90737 /* target.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = target.h; sourceTree = "<group>"; };
 		FC0B34780FA2851C0080FFA0 /* source_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = source_internal.h; sourceTree = "<group>"; };
@@ -1023,9 +1021,7 @@
 				E49F251D125D630A0057C971 /* install-manpages.sh */,
 				E4EB4A2A14C36F4E00AA0FA9 /* install-headers.sh */,
 				E421E5FB1716B8730090DC9B /* install-dtrace.sh */,
-				E4FB8E90218CD7F8004B7A25 /* install-plists.sh */,
 				E49F251E125D631D0057C971 /* mig-headers.sh */,
-				E482F1CD12DBAB590030614D /* postprocess-headers.sh */,
 				C01866BF1C5976C90040FC07 /* run-on-install.sh */,
 			);
 			path = xcodescripts;
