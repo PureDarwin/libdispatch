@@ -1495,7 +1495,6 @@
 				E4EB4A2B14C3720B00AA0FA9 /* Install Headers */,
 				4CED8B9D0EEDF8B600AF99AB /* Install Manpages */,
 				6E2464DD1F5E67900031ADD9 /* Validate symbol ordering */,
-				E4FB8E8F218CD68A004B7A25 /* Install Plists */,
 			);
 			buildRules = (
 			);
@@ -1933,7 +1932,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = "/bin/bash -e";
-			shellScript = ". \"${SCRIPT_INPUT_FILE_0}\"";
+			shellScript = ". \"${SCRIPT_INPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E4EC121712514715000DDBD1 /* Mig Headers */ = {
@@ -1975,27 +1974,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = "/bin/bash -e";
 			shellScript = "ln -fs \"${PRODUCT_NAME}.a\" \"${SCRIPT_OUTPUT_FILE_0}\"";
-			showEnvVarsInLog = 0;
-		};
-		E4FB8E8F218CD68A004B7A25 /* Install Plists */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/xcodescripts/install-plists.sh",
-				"$(SRCROOT)/src/libdispatch.plist",
-			);
-			name = "Install Plists";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-			shellPath = "/bin/bash -e";
-			shellScript = ". \"${SCRIPT_INPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
