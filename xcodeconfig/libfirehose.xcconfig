@@ -18,7 +18,7 @@
 // @APPLE_APACHE_LICENSE_HEADER_END@
 //
 
-#include "darwinbuild.xcconfig"
+#include "../darwinbuild.xcconfig"
 
 SUPPORTED_PLATFORMS = macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator
 PRODUCT_NAME = $(TARGET_NAME)

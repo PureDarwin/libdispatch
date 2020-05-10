@@ -18,7 +18,7 @@
 // @APPLE_APACHE_LICENSE_HEADER_END@
 //
 
-#include "darwinbuild.xcconfig"
+#include "../darwinbuild.xcconfig"
 
 BUILD_VARIANTS = normal
 INSTALL_PATH = /usr/lib/system/introspection
