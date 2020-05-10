@@ -1882,7 +1882,7 @@
 			isa = PBXProject;
 			attributes = {
 				DefaultBuildSystemTypeForWorkspace = Latest;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1140;
 				TargetAttributes = {
 					3F3C9326128E637B0042B1F7 = {
 						ProvisioningStyle = Manual;
@@ -1938,13 +1938,14 @@
 			};
 			buildConfigurationList = 1DEB91EF08733DB70010E9CD /* Build configuration list for PBXProject "libdispatch" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 1;
 			knownRegions = (
-				English,
-				Japanese,
-				French,
-				German,
+				en,
+				fr,
+				de,
+				ja,
+				Base,
 			);
 			mainGroup = 08FB7794FE84155DC02AAC07 /* libdispatch */;
 			projectDirPath = "";
@@ -2735,6 +2736,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E40041AA125D705F0022B135 /* libdispatch-resolver.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 			};
 			name = Release;
 		};
@@ -2742,24 +2744,33 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E43D93F11097917E004F6A62 /* libdispatch.xcconfig */;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 			};
 			name = Release;
 		};
 		3F3C9357128E637B0042B1F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 			};
 			name = Release;
 		};
 		3F3C9358128E637B0042B1F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 			};
 			name = Debug;
 		};
 		4552540C19B1389700B88766 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -2767,6 +2778,7 @@
 		4552540D19B1389700B88766 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -2775,6 +2787,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6E040C721C499C3600411A2E /* libfirehose_kernel.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 			};
 			name = Release;
 		};
@@ -2782,12 +2795,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6E040C721C499C3600411A2E /* libfirehose_kernel.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 			};
 			name = Debug;
 		};
 		6E2ECAFF1C49C30000A30A32 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -2795,6 +2810,7 @@
 		6E2ECB001C49C30000A30A32 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -2802,6 +2818,7 @@
 		6E435542215B5D9D00C13177 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -2809,6 +2826,7 @@
 		6E435543215B5D9D00C13177 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -2816,6 +2834,7 @@
 		6EA833C42162D6380045EFDC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -2823,6 +2842,7 @@
 		6EA833C52162D6380045EFDC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -2831,6 +2851,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6EB4E4421BA8BD7800D7B9D2 /* libfirehose.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 			};
 			name = Release;
 		};
@@ -2838,12 +2859,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6EB4E4421BA8BD7800D7B9D2 /* libfirehose.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 			};
 			name = Debug;
 		};
 		92CBD7241BED924F006E0892 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -2851,6 +2874,7 @@
 		92CBD7251BED924F006E0892 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -2858,18 +2882,21 @@
 		92F3FECC1BEC69E500025962 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 			};
 			name = Release;
 		};
 		92F3FECD1BEC69E500025962 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 			};
 			name = Debug;
 		};
 		9BEBA57020127D3300E6FD0D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2878,6 +2905,7 @@
 		9BEBA57120127D3300E6FD0D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2887,6 +2915,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C00B0E121C5AEBF7000330B3 /* libdispatch-dyld-stub.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 			};
 			name = Release;
 		};
@@ -2894,6 +2923,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C00B0E121C5AEBF7000330B3 /* libdispatch-dyld-stub.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 			};
 			name = Debug;
 		};
@@ -2901,6 +2931,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C01866BE1C59735B0040FC07 /* libdispatch-mp-static.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 			};
 			name = Release;
 		};
@@ -2908,18 +2939,21 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C01866BE1C59735B0040FC07 /* libdispatch-mp-static.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 			};
 			name = Debug;
 		};
 		C927F35B10FD7F0600C5AB8B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 			};
 			name = Release;
 		};
 		C927F35C10FD7F0600C5AB8B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 			};
 			name = Debug;
 		};
@@ -2927,7 +2961,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E40041AA125D705F0022B135 /* libdispatch-resolver.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				DRIVERKIT = 1;
 				DRIVERKITROOT = /System/DriverKit;
 				SDKROOT = driverkit.internal;
@@ -2939,7 +2973,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E40041AA125D705F0022B135 /* libdispatch-resolver.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				DRIVERKIT = 1;
 				DRIVERKITROOT = /System/DriverKit;
 				SDKROOT = driverkit.internal;
@@ -2951,6 +2985,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E40041A9125D70590022B135 /* libdispatch-resolved.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				DISPATCH_RESOLVED_VARIANT = armv81;
 			};
 			name = Release;
@@ -2959,6 +2994,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E40041A9125D70590022B135 /* libdispatch-resolved.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				DISPATCH_RESOLVED_VARIANT = armv81;
 			};
 			name = Debug;
@@ -2966,6 +3002,7 @@
 		E49F24D9125D57FA0057C971 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				WARNING_CFLAGS = (
 					"-Weverything",
 					"$(inherited)",
@@ -2976,6 +3013,7 @@
 		E49F24DA125D57FA0057C971 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				WARNING_CFLAGS = (
 					"-Weverything",
@@ -2988,6 +3026,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E4B515D9164B2E9B00E003AF /* libdispatch-introspection.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 			};
 			name = Release;
 		};
@@ -2995,6 +3034,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E4B515D9164B2E9B00E003AF /* libdispatch-introspection.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 			};
 			name = Debug;
 		};
@@ -3002,6 +3042,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E43D93F11097917E004F6A62 /* libdispatch.xcconfig */;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				ENABLE_TESTABILITY = YES;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
@@ -3009,6 +3057,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E40041AA125D705F0022B135 /* libdispatch-resolver.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 			};
 			name = Debug;
 		};
@@ -3016,6 +3065,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E40041A9125D70590022B135 /* libdispatch-resolved.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				DISPATCH_RESOLVED_VARIANT = mp;
 			};
 			name = Release;
@@ -3024,6 +3074,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E40041A9125D70590022B135 /* libdispatch-resolved.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				DISPATCH_RESOLVED_VARIANT = mp;
 			};
 			name = Debug;
