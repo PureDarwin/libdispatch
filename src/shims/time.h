@@ -217,6 +217,7 @@ _dispatch_time_now(dispatch_clock_t clock)
 typedef struct {
 	uint64_t nows[DISPATCH_CLOCK_COUNT];
 } dispatch_clock_now_cache_s, *dispatch_clock_now_cache_t;
+extern kern_return_t mach_get_times(uint64_t *, uint64_t *, struct timespec *);
 
 DISPATCH_ALWAYS_INLINE
 static inline uint64_t
