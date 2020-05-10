@@ -1494,7 +1494,6 @@
 				6EA283D61CAB933E0041B2E0 /* Copy Trace Definitions */,
 				E4EB4A2B14C3720B00AA0FA9 /* Install Headers */,
 				4CED8B9D0EEDF8B600AF99AB /* Install Manpages */,
-				6E2464DD1F5E67900031ADD9 /* Validate symbol ordering */,
 			);
 			buildRules = (
 			);
@@ -1714,24 +1713,6 @@
 			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = "/bin/bash -e";
 			shellScript = ". \"${SCRIPT_INPUT_FILE_0}\"";
-			showEnvVarsInLog = 0;
-		};
-		6E2464DD1F5E67900031ADD9 /* Validate symbol ordering */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/xcodeconfig/libdispatch.order",
-				"$(SRCROOT)/xcodeconfig/libdispatch.dirty",
-				"$(SRCROOT)/xcodeconfig/libdispatch.clean",
-			);
-			name = "Validate symbol ordering";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-			shellPath = "/bin/bash -e";
-			shellScript = ". \"${SRCROOT}/xcodescripts/check-order.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C00B0E061C5AEBBE000330B3 /* Symlink libdispatch.a -> libdispatch_dyld_target.a */ = {
