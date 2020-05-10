@@ -1895,7 +1895,6 @@
 				"$(SRCROOT)/xcodescripts/install-headers.sh",
 				"$(SRCROOT)/os/object.h",
 				"$(SRCROOT)/os/object_private.h",
-				"$(SRCROOT)/os/venture_private.h",
 				"$(SRCROOT)/os/voucher_private.h",
 				"$(SRCROOT)/os/voucher_activity_private.h",
 			);
@@ -1903,13 +1902,12 @@
 			outputPaths = (
 				"$(CONFIGURATION_BUILD_DIR)/$(OS_PUBLIC_HEADERS_FOLDER_PATH)/object.h",
 				"$(CONFIGURATION_BUILD_DIR)/$(OS_PRIVATE_HEADERS_FOLDER_PATH)/object_private.h",
-				"$(CONFIGURATION_BUILD_DIR)/$(OS_PRIVATE_HEADERS_FOLDER_PATH)/venture_private.h",
 				"$(CONFIGURATION_BUILD_DIR)/$(OS_PRIVATE_HEADERS_FOLDER_PATH)/voucher_private.h",
 				"$(CONFIGURATION_BUILD_DIR)/$(OS_PRIVATE_HEADERS_FOLDER_PATH)/voucher_activity_private.h",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = "/bin/bash -e";
-			shellScript = ". \"${SCRIPT_INPUT_FILE_0}\"";
+			shellScript = ". \"${SCRIPT_INPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E4EB4A3014C3A14000AA0FA9 /* Install Headers */ = {
