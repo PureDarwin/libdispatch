@@ -162,7 +162,7 @@ UNWIND_LDFLAGS = -lunwind
 UNWIND_LDFLAGS[sdk=driverkit*] =
 OBJC_LDFLAGS = -Wl,-upward-lobjc
 OBJC_LDFLAGS[sdk=driverkit*] =
-LIBDARWIN_LDFLAGS = -Wl,-upward-lsystem_darwin
+LIBDARWIN_LDFLAGS =
 LIBDARWIN_LDFLAGS[sdk=*simulator*] =
 LIBDARWIN_LDFLAGS[sdk=driverkit*] =
 ORDER_LDFLAGS = -Wl,-order_file,$(SRCROOT)/xcodeconfig/libdispatch.order -Wl,-dirty_data_list,$(SRCROOT)/xcodeconfig/libdispatch.dirty
