@@ -31,10 +31,6 @@
 #define likely(x)   __builtin_expect(!!(x), 1)
 #define unlikely(x) __builtin_expect(!!(x), 0)
 
-#ifndef OS_FALLTHROUGH
-#define OS_FALLTHROUGH
-#endif
-
 #define DISPATCH_INTERNAL_CRASH(ac, msg) ({ panic(msg); __builtin_trap(); })
 
 #if defined(__x86_64__) || defined(__i386__)
