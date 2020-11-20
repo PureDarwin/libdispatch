@@ -1606,7 +1606,7 @@
 			isa = PBXProject;
 			attributes = {
 				DefaultBuildSystemTypeForWorkspace = Latest;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1220;
 				TargetAttributes = {
 					3F3C9326128E637B0042B1F7 = {
 						ProvisioningStyle = Manual;
